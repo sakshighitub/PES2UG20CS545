@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'g++ -o PES2UG20CS551 get.cpp'
+                sh 'g++ -o PES2UG20CS545 meow.cpp'
                 echo "Build Successful"
             }
         }
         stage('Test') {
             steps {
-                sh './PES2UG20CS551'
+                sh './PES2UG20CS545'
             }
         }
     }
